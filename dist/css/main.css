@@ -674,6 +674,11 @@
   .home__role {
     font-size: 0.9rem;
   }
+  .projects__bio-image .text-secondary {
+    width: 60%;
+    font-size: 20px;
+    text-align: center;
+  }
   .projects__item {
     border-bottom: 3px solid white;
   }

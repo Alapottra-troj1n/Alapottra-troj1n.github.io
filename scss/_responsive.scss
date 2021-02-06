@@ -103,6 +103,15 @@
     
     }
      .projects{
+
+      &__bio-image{
+        .text-secondary{
+          width: 60%;
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+
        &__item{
          border-bottom: 3px solid white;
        }
@@ -111,7 +120,9 @@
          font-size: 0.8rem;
 
        }
+
      }
+    
 
 
   }
