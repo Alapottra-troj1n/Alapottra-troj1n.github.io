@@ -30,6 +30,13 @@
   font-weight: 700;
 }
 
+@media (max-width: 500px) {
+  .home footer {
+    font-size: 0.5rem;
+    right: 0;
+  }
+}
+
 .menu-btn {
   position: absolute;
   z-index: 1;
@@ -740,8 +747,8 @@ main .social-icon a:hover {
 footer {
   font-size: 0.6rem;
   position: fixed;
-  bottom: -0.5rem;
-  right: 1rem;
+  bottom: -0.2rem;
+  right: 0.8rem;
   padding: 1rem;
   color: #fff;
 }
