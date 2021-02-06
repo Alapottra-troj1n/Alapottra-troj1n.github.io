@@ -1,0 +1,151 @@
+.projects{
+    padding-bottom: 2rem;
+
+    &__bio-image{
+        height: 30vh;
+        width: 100%;
+        background:
+    linear-gradient(
+        to right,
+        rgba($primary-color, 0.9), 
+
+        rgba($primary-color, 0.3)
+    ),
+     url('/dist/img/model-1.jpg') center top;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+
+   .text-secondary {
+       font-size: 2rem;
+       margin-bottom: 2rem;
+       border: 1px solid $secondary-color;
+       padding:1rem;
+       color:white;
+       font-weight: 300;
+   }
+    
+    }
+
+    
+
+
+
+&__items{
+    width: 70vw;  
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem ;
+
+
+    
+}
+
+&__detail{
+    text-align: center;
+    border: 1px solid $secondary-color;
+    padding: 1rem;
+    margin: 1rem 0rem;
+    font-weight: 300;
+    
+
+}
+
+&__fullportfolio {
+    
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    a{
+        font-weight: 300;
+    }
+    a:hover{
+        color: $secondary-color;
+    }
+
+    
+}
+
+&__item{
+    
+    position: relative;
+    border-bottom: 3px solid white;
+    overflow: hidden;
+    cursor: pointer;
+    
+    
+    
+    img{
+        width: 100%;
+    
+              
+        
+    }
+
+    &::after{
+        content:"";
+        position: absolute;
+        top:100%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: $primary-color;
+        opacity: 0;
+        
+        @include transition-ease;
+       
+    }
+
+   &:hover{
+       &::after{
+           top: 0;
+           opacity: 0.7;
+        
+
+       }
+       .projects__btn{
+           opacity: 1;
+       }
+   }
+    
+}
+
+&__btns{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+&__btn{
+    opacity: 0;
+    color: set-text-color($primary-color);
+    @include transition-ease;
+
+    &:hover{
+        color: $secondary-color;
+    }
+}
+
+.social-icon{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    transform: rotate(90deg)
+    translate(-6.5rem, -7rem);
+}
+
+}
