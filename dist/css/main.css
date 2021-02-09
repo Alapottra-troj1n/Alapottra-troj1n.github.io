@@ -587,12 +587,20 @@
       grid-template-columns: 1fr;
   grid-gap: 2rem;
   font-size: 1.5rem;
-  font-size: 1rem;
+}
+
+.contact__list .text-secondary {
+  margin-top: 0.7rem;
 }
 
 .contact .social-icon {
   position: initial;
   margin-top: 2rem;
+}
+
+.contact .social-icon a {
+  font-size: 0.8rem;
+  padding: 1rem;
 }
 
 @media screen and (min-width: 768px) {
