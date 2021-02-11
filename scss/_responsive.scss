@@ -46,7 +46,7 @@
     }
   
     .contact__list {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
   
@@ -67,7 +67,7 @@
     }
   }
 
-  @media (max-width:500px){
+  @media (max-width:700px){
     .skillcontainer{
       flex-direction: column;
       .skillbar{
@@ -105,6 +105,7 @@
      .projects{
 
       &__bio-image{
+
         .text-secondary{
           width: 60%;
           font-size: 20px;
@@ -121,13 +122,23 @@
 
        }
 
+       
+
      }
 
-     .contact__list{
-       font-size: 1rem;
-     }
+
     
 
+     .contact__list{
+       font-size: 1.2rem;
+     }
+
+
+     .social-icon{
+       a{
+         font-size: 0.1rem;
+       }
+     }
   
 
   }

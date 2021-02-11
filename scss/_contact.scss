@@ -1,6 +1,6 @@
 .contact{
     height: 100%;
-    padding-top: 40vh;
+    justify-content: center;
     overflow: hidden;
     display:flex;
     flex-direction: column;
@@ -39,8 +39,8 @@
         position: initial;
         margin-top: 2rem;
        a{
-           font-size:0.8rem;
-           padding: 1rem
+           font-size:0.6rem;
+           padding: 0.6rem
        }
     }
 
